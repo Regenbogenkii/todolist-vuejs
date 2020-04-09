@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
+  <v-app>
     <Header />
-    <router-view/>
-  </div>
+    <router-view /> 
+  </v-app>
 </template>
 
 <script>
-
 import Header from './components/Header';
+import vue2Dropzone from "vue2-dropzone";
+import "vue2-dropzone/dist/vue2Dropzone.min.css";
+// import HelloWorld from './components/HelloWorld';
 
 export default {
-  
   name: 'app',
+
   components: {
     Header
-  }
-}
+  },
 
+  data: () => ({
+  }),
+};
 </script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
@@ -40,3 +44,4 @@ export default {
   color: #42b983;
 }
 </style>
+
